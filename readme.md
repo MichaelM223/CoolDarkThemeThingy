@@ -16,6 +16,7 @@ and thats about it. Enjoy :)
 - added more colours to be used for styling, and a "special primary colour", which is dark blue atm.
 - Improved the slider; rounded corners on the 'slider-puller-handle-thing', improved the different sizes of the progress bits on the slider, and the slider uses the "special primary colour".
 - Also improved the ScrollBars (the scroll handle bit was darker than the backgroundy bit, so i changed that.
+- Added some colours to the light theme too (not sure why you'd want to use it but eh)
 - And finally improved the RadioBoxes by giving them a more circular shape, like they normally have.
 
 Here's a preview of the latest update:

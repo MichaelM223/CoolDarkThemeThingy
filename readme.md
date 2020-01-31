@@ -8,12 +8,18 @@ i started making this maybe a few weeks ago. just drag and drop the DarkTheme.xa
         </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
 </Application.Resources>
-
 ```
 Also, i added some stuff used for MVVM for some reason. I only really used it for the light/dark combobox at the bottom left of the screen.
 and thats about it. Enjoy :)
-Here's a preview of the latest update: (i haven't sorted the actual window title bar's theme. that's complex stuff)
-![](latestPreview1.png)
+# Latest (big) Update
+- Improved the ComboBox; themed the ComboBoxItems
+- added more colours to be used for styling, and a "special primary colour", which is dark blue atm.
+- Improved the slider; rounded corners on the 'slider-puller-handle-thing', improved the different sizes of the progress bits on the slider, and the slider uses the "special primary colour".
+- Also improved the ScrollBars (the scroll handle bit was darker than the backgroundy bit, so i changed that.
+- And finally improved the RadioBoxes by giving them a more circular shape, like they normally have.
+
+Here's a preview of the latest update:
+![](latestPreview2.png)
 # Errors and 'todo' stuff
 An error if you add a "Light/Dark" option thingy, and use Menus/MenuItems; in the test program thing, selecting the light theme just unloads DarkTheme.xaml, which makes WPF style everything to their default styles. But because i said that MenuItems need to have a special template, well WPF will try to look for that template and wont find it. As a result, the MenuItems will all turn into tiny squares because WPF has nothing to style them with. idk how to fix that unfortunately. rip.
 # How to use MenuItems properly (sort of)

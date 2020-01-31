@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Themes"
         xmlns:viewmodels="clr-namespace:Themes.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280" Style="{DynamicResource MainWindowStyle}" FontSize="16">
+        Title="MainWindow" Height="720" Width="1280" FontSize="16" Background="{DynamicResource BackgroundColour}">
     <Window.DataContext>
         <viewmodels:MainViewModel/>
     </Window.DataContext>
@@ -33,8 +33,18 @@
             </MenuItem>
         </Menu>
         <GroupBox Header="Theme" HorizontalAlignment="Left" Height="84" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="236">
-            <ComboBox SelectedIndex="{Binding ThemeIndex, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" FontSize="16" Margin="5,10,5,0">
+            <ComboBox SelectedIndex="{Binding ThemeIndex, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" FontSize="16" Margin="3,14,7,0">
                 <ComboBoxItem Content="Light"/>
+                <ComboBoxItem Content="Dark"/>
+                <ComboBoxItem Content="Dark"/>
+                <ComboBoxItem Content="Dark"/>
+                <ComboBoxItem Content="Dark"/>
+                <ComboBoxItem Content="Dark"/>
+                <ComboBoxItem Content="Dark"/>
+                <ComboBoxItem Content="Dark"/>
+                <ComboBoxItem Content="Dark"/>
+                <ComboBoxItem Content="Dark"/>
+                <ComboBoxItem Content="Dark"/>
                 <ComboBoxItem Content="Dark"/>
             </ComboBox>
         </GroupBox>
@@ -75,12 +85,8 @@
                             <Button Content="Button 2" Margin="10,0,2,0" VerticalAlignment="Bottom" Height="60" FontSize="16"/>
                             <Button Content="Button 3" Margin="2,0,10,0" VerticalAlignment="Bottom" Height="60" Grid.Column="1" FontSize="16"/>
                         </Grid>
-                        <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Height="18" Width="140"/>
-                        <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Height="22" Width="140"/>
-                        <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top" Height="10" Width="140"/>
-                        <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="155,140,0,0" VerticalAlignment="Top" Height="10" Width="139"/>
-                        <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="155,164,0,0" VerticalAlignment="Top" Height="10" Width="139"/>
-                        <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="155,188,0,0" VerticalAlignment="Top" Height="10" Width="139"/>
+                        <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Height="20" Width="140"/>
+                        <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="155,140,0,0" VerticalAlignment="Top" Height="20" Width="139"/>
                         <Calendar HorizontalAlignment="Left" Margin="10,217,0,0" VerticalAlignment="Top" Height="163"/>
                         <Expander Header="Expander" HorizontalAlignment="Left" Margin="10,385,0,0" Width="177" Height="90" VerticalAlignment="Top">
                             <Grid Background="Transparent">
@@ -88,7 +94,7 @@
                             </Grid>
                         </Expander>
                         <TextBlock HorizontalAlignment="Left" Margin="192,220,0,0" Text="A Text Block Here" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
-                        <ListBox Margin="192,268,10,10">
+                        <ListBox Margin="192,268,10,95">
                             <ListBoxItem Content="A ListBoxItem Here"/>
                             <ListBoxItem Content="A ListBoxItem Here"/>
                             <ListBoxItem Content="A ListBoxItem Here"/>
@@ -105,6 +111,8 @@
                         </ListBox>
                         <TextBox Height="24" Margin="10,480,117,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
                         <TextBox Height="24" Margin="10,509,117,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+                        <ScrollBar HorizontalAlignment="Right" Margin="0,0,10,10" Height="80" VerticalAlignment="Bottom"/>
+                        <ScrollBar Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,32,10" Height="17" VerticalAlignment="Bottom" Width="82"/>
                     </Grid>
                 </GroupBox>
                 <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,10"/>
@@ -116,7 +124,7 @@
                                     <ScrollViewer>
                                         <StackPanel Orientation="Vertical">
                                             <TextBlock Text="Slidersssss" Margin="2"/>
-                                            <Slider Margin="2"/>
+                                            <Slider Margin="2" Value="2"/>
                                             <Separator Margin="3"/>
                                             <TextBlock Text="Slidersssss" Margin="2"/>
                                             <Slider Margin="2"/>
@@ -158,10 +166,10 @@
                             <TabItem Header="TabItem">
                                 <Grid Background="{DynamicResource ControlDefaultBackground}"/>
                             </TabItem>
-                            <TabItem Header="TabItem" Margin="0,-2,0,0">
+                            <TabItem Header="TabItem">
                                 <Grid Background="{DynamicResource ControlDefaultBackground}"/>
                             </TabItem>
-                            <TabItem Header="TabItem" Margin="0,-2,0,0">
+                            <TabItem Header="TabItem">
                                 <Grid Background="{DynamicResource ControlDefaultBackground}"/>
                             </TabItem>
                         </TabControl>

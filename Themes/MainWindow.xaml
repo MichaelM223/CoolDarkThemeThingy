@@ -12,24 +12,37 @@
     </Window.DataContext>
     <Grid>
         <Menu VerticalAlignment="Top">
-            <MenuItem Header="File">
+            <MenuItem Header="File" Template="{DynamicResource TopMenuItem}" Foreground="White"     >
                 <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}"/>
-                <MenuItem Header="Save as..." Template="{DynamicResource DropDownMenuItemTemplate}">
-                    <MenuItem Header="Text File (txt)" Template="{DynamicResource DropDownMenuItemTemplate}"/>
-                    <MenuItem Header="XML (xml)" Template="{DynamicResource DropDownMenuItemTemplate}"/>
-                    <MenuItem Header="C# File (cs)" Template="{DynamicResource DropDownMenuItemTemplate}"/>
+                <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}"/>
+                <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}"/>
+                <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}">
+                    <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}"/>
+                </MenuItem>
+                <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}"/>
+                <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}"/>
+                <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}">
+                    <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}">
+                        <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}">
+                            <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}">
+                                <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}">
+                                    <MenuItem Header="Save" Template="{DynamicResource DropDownMenuItemTemplate}"/>
+                                </MenuItem>
+                            </MenuItem>
+                        </MenuItem>
+                    </MenuItem>
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Edit">
-                <MenuItem Header="1" Template="{DynamicResource DropDownMenuItemTemplate}"/>
-                <MenuItem Header="2" Template="{DynamicResource DropDownMenuItemTemplate}">
-                    <MenuItem Header="21" Template="{DynamicResource DropDownMenuItemTemplate}"/>
-                    <MenuItem Header="22" Template="{DynamicResource DropDownMenuItemTemplate}"/>
-                    <MenuItem Header="23" Template="{DynamicResource DropDownMenuItemTemplate}"/>
+            <MenuItem Header="Edit" >
+                <MenuItem Header="1"/>
+                <MenuItem Header="2">
+                    <MenuItem Header="21"/>
+                    <MenuItem Header="22"/>
+                    <MenuItem Header="23"/>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Other things here">
-                <MenuItem Header="eeeeeeeeeeee" Template="{DynamicResource DropDownMenuItemTemplate}"/>
+                <MenuItem Header="eeeeeeeeeeee" />
             </MenuItem>
         </Menu>
         <GroupBox Header="Theme" HorizontalAlignment="Left" Height="84" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="236">

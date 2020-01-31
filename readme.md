@@ -1,10 +1,10 @@
 # The dark theme app
-i started making this maybe a few weeks ago. just drag and drop the DarkTheme.xaml (located in the ThemesFolder folder) into your project (anywhere) and inside App.xaml place this:
+i started making this maybe a few weeks ago. just drag and drop the Dark.xaml (located in the ThemesFolder folder) into your project (anywhere) and inside App.xaml place this:
 ```xml
 <Application.Resources>
     <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="/ThemesFolder/DarkTheme.xaml"/>
+            <ResourceDictionary Source="/ThemesFolder/Dark.xaml"/>
         </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
 </Application.Resources>

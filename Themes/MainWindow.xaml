@@ -107,21 +107,21 @@
                             </Grid>
                         </Expander>
                         <TextBlock HorizontalAlignment="Left" Margin="192,220,0,0" Text="A Text Block Here" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
-                        <ListBox Margin="192,268,10,95">
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                            <ListBoxItem Content="A ListBoxItem Here"/>
-                        </ListBox>
+                        <ListView Margin="192,268,10,95">
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                            <ListViewItem Content="A ListBoxItem Here"/>
+                        </ListView>
                         <TextBox Height="24" Margin="10,0,117,39" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom"/>
                         <TextBox Height="24" Margin="10,0,117,10" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom"/>
                         <ScrollBar HorizontalAlignment="Right" Margin="0,0,10,10" Height="80" VerticalAlignment="Bottom"/>

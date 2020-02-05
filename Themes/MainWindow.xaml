@@ -106,7 +106,7 @@
                         <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Height="20" Width="140"/>
                         <CheckBox Content="Check Box 1" HorizontalAlignment="Left" Margin="155,140,0,0" VerticalAlignment="Top" Height="20" Width="139"/>
                         <Calendar HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" Height="163"/>
-                        <Expander Header="Expander" HorizontalAlignment="Left" Margin="10,385,0,0" Width="177" Height="101" VerticalAlignment="Top">
+                        <Expander Header="Expander" HorizontalAlignment="Left" Margin="10,385,0,0" Width="177" Height="98" VerticalAlignment="Top">
                             <Grid Background="Transparent">
                                 <Button Margin="10" Content="Hello there :))"/>
                             </Grid>
@@ -127,7 +127,16 @@
                             <ListViewItem Content="A ListViewItem Here"/>
                             <ListViewItem Content="A ListViewItem Here"/>
                         </ListView>
-                        <TextBox Height="24" Margin="10,0,117,39" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom"/>
+                        <ComboBox SelectedIndex="2" Margin="10,0,117,39" IsTextSearchEnabled="True" IsTextSearchCaseSensitive="False" IsEditable="True" VerticalAlignment="Bottom">
+                            <ComboBoxItem Content="osososos"/>
+                            <ComboBoxItem Content="osososos"/>
+                            <ComboBoxItem Content="osososos"/>
+                            <ComboBoxItem Content="osososos"/>
+                            <ComboBoxItem Content="osososos"/>
+                            <ComboBoxItem Content="osososos"/>
+                            <ComboBoxItem Content="osososos"/>
+                            <ComboBoxItem Content="osososos"/>
+                        </ComboBox>
                         <TextBox Height="24" Margin="10,0,117,10" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom"/>
                         <ListView Margin="0,0,10,10" Height="133" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="102">
                             <ListViewItem Content="A ListBoxItem Here"/>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -31,7 +32,10 @@ namespace Themes
             }
 
             if (!string.IsNullOrEmpty(themeName))
-                this.Resources.MergedDictionaries[0].Source = new Uri($"/ThemesFolder/{themeName}.xaml", UriKind.Relative);
+            {
+                this.Resources.MergedDictionaries[5].Source = new Uri($"/ThemesFolder/{themeName}.xaml", UriKind.Relative);
+                ThemeManager.ChangeAppTheme(this, themeName == "DarkTheme" ? "Dark" : "Light");
+            }
         }
     }
 }

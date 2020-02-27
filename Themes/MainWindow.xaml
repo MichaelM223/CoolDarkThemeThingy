@@ -1,17 +1,12 @@
-﻿<mah:MetroWindow x:Class="Themes.MainWindow"
-        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+﻿<Window x:Class="Themes.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Themes"
         xmlns:viewmodels="clr-namespace:Themes.ViewModels"
-        mc:Ignorable="d" Title="EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE (themes program)"
-        Height="720" Width="1280" FontSize="16" Background="{DynamicResource BackgroundColour}" 
-                 NonActiveBorderBrush="{DynamicResource ControlDisabledBorderBrush}" 
-                 NonActiveWindowTitleBrush="{DynamicResource ControlDisabledBorderBrush}" 
-                 WindowTitleBrush="{DynamicResource ControlDarkerBackground}" 
-                 BorderBrush="{DynamicResource ControlDarkerBorderBrush}">
+        mc:Ignorable="d" Title="EEEEEEEEEEEEEEEEEEEEE (themes program)"
+        Height="720" Width="1280" FontSize="16" Style="{DynamicResource CustomWindowStyle}" WindowStyle="SingleBorderWindow">
     <Window.DataContext>
         <viewmodels:MainViewModel/>
     </Window.DataContext>
@@ -230,4 +225,4 @@
             </Grid>
         </GroupBox>
     </Grid>
-</mah:MetroWindow>
+</Window>

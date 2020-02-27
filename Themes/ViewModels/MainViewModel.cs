@@ -4,6 +4,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
 using Themes.Utilities;
 
 namespace Themes.ViewModels
@@ -18,6 +20,14 @@ namespace Themes.ViewModels
 
     public class MainViewModel : BaseViewModel
     {
+        public ICommand CloseWindowCommand     { get; set; }
+        public ICommand MaximizeRestoreCommand { get; set; }
+        public ICommand MinimizeWindowCommand  { get; set; }
+
+        private void CloseWindow() { (Application.Current.MainWindow as MainWindow).CloseWindow(); }
+        private void MaximRestre() { (Application.Current.MainWindow as MainWindow).MaximizeRestore(); }
+        private void MinimWindow() { (Application.Current.MainWindow as MainWindow).Minimize(); }
+
         private int _themeIndex;
         public int ThemeIndex { get => _themeIndex; set { RaisePropertyChanged(ref _themeIndex, value); SetTheme(); } }
 
@@ -37,6 +47,10 @@ namespace Themes.ViewModels
             DataGridItems.Add(new DataGridItemFileExplorerSortOf() { FileName = "34445tpng", DateModified = "25/12/1925", FileSize = "67 GB", FileType = "PNG File" });
             DataGridItems.Add(new DataGridItemFileExplorerSortOf() { FileName = "t5657png", DateModified = "25/12/1224", FileSize = "62244 GB", FileType = "idkfile" });
             DataGridItems.Add(new DataGridItemFileExplorerSortOf() { FileName = "tp67u67ng.txt", DateModified = "25/12/2124", FileSize = "455 GB", FileType = "txt File" });
+
+            CloseWindowCommand = new Command(CloseWindow);
+            MaximizeRestoreCommand = new Command(MaximRestre);
+            MinimizeWindowCommand = new Command(MinimWindow);
         }
 
         public void SetTheme()

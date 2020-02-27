@@ -12,7 +12,9 @@ i started making this maybe a few weeks ago. just drag and drop the Dark.xaml (l
 Also, i added some stuff used for MVVM for some reason. I only really used it for the light/dark combobox at the bottom left of the screen.
 and thats about it. Enjoy :)
 # Latest (big) Update
-- Themed the titlebar! except it's really buggy if you chose to use both light theme and dark theme. It's using MahApps so :/ will fix soon
+- Themed the titlebar! and it actually works now! however, some setup adding cs code is needed to get it to work. you need to set the mainwindow's datacontext to something, and inside that something needs to be 3 ICommands:CloseWindowCommand, MaximizeRestoreCommand, MinimizeWindowCommand. the code that these run can be seen in the MainViewModel and MainWindow.xaml.cs
+
+
 - Improved the ComboBox; themed the ComboBoxItems
 - added more colours to be used for styling, and a "special primary colour", which is dark blue atm.
 - Improved the slider; rounded corners on the 'slider-puller-handle-thing', improved the different sizes of the progress bits on the slider, and the slider uses the "special primary colour".

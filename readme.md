@@ -1,6 +1,6 @@
-# Preview
-![](latestUpdate4.png)
 # The dark theme app
+Latest Update:
+![](latestUpdate4.png)
 i started making this maybe a few weeks ago. just drag and drop the Dark.xaml (located in the ThemesFolder folder) into your project (anywhere) and inside App.xaml place this:
 ```xml
 <Application.Resources>

@@ -23,8 +23,6 @@ and thats about it. Enjoy :)
 - Also improved the ScrollBars (the scroll handle bit was darker than the backgroundy bit, so i changed that.
 - Added some colours to the light theme too (not sure why you'd want to use it but eh)
 - And finally improved the RadioBoxes by giving them a more circular shape, like they normally have.
-# Errors and 'todo' stuff
-An error if you add a "Light/Dark" option thingy, and use Menus/MenuItems; in the test program thing, selecting the light theme just unloads DarkTheme.xaml, which makes WPF style everything to their default styles. But because i said that MenuItems need to have a special template, well WPF will try to look for that template and wont find it. As a result, the MenuItems will all turn into tiny squares because WPF has nothing to style them with. idk how to fix that unfortunately. rip.
 # How to use MenuItems properly (sort of)
 MenuItems are relatively challenging to auto-style, so they require just a tiny bit of effort to give them the dark theme. MenuItems use a POPUP thingy which is quite difficult to get to work sometimes. But i think i did okay tbh. but i haven't managed to put the little arrow which shows when the MenuItem has children MenuItems.
 this is the code for making a fully themed menu:

@@ -54,7 +54,8 @@ You can make the commands execute this code using a class in this app called Com
 CloseWindowCommand = new Command(CloseWindow); //no ()'s because.. well, c# reasons ;)
 ```
 I dont know how to make the themes "auto-do" the closing, minimizing, etc, from the command from within the styles class, so for now you need these 3 commands and methods. So this might be a problem if a window's datacontext/datacontext class changes; every one of them will need the ICommands and methods. 
-As for the icons, you need 3 images (png, ico, doesnt matter) called: minimizeWindow, maximizeRestoreWindow & closeWindow. These could be placed in an images folder if you want. If you are using the light theme, you'll need another 3 icons with the exact same names, but with Black on the end (minimizeWindowBlack). so for using light and dark theme, you'd have atleast 6 images. In this app, they're already included so you can use them if you want.
+### Icons/Images for the buttons
+For the dark theme, you'll need 3 images (png, ico, doesnt matter) called: minimizeWindow, maximizeRestoreWindow & closeWindow. These could be placed in an images folder if you want. If you are using the light theme, you'll need 3 icons with the exact same names, but with 'Black' on the end (minimizeWindowBlack). so for using light and dark theme, you'd have atleast 6 images. In this app, they're already included so you can use them if you want. If you want to to use the same icons for the light and dark theme, you'll have to go into LightTheme.xaml, search for the icon file names (minimizeWindowBlack for example) and remove 'Black' on all 3 of them :)
 ## Giving the title bar colours:
 For the sake of simplicity (well, mainly because idk how to create Dependency stuff), the window's titlebar colour and the window's border colour are the exact same. the background obviously only affects the window's content background. So in a window's XAML, just do:
 ```xml

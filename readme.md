@@ -15,8 +15,6 @@ Also, i added some stuff used for MVVM for some reason. I only really used it fo
 and thats about it. Enjoy :)
 # Latest (big) Update
 - Themed the titlebar! and it actually works now! however, some setup adding cs code is needed to get it to work. you need to set the mainwindow's datacontext to something, and inside that something needs to be 3 ICommands:CloseWindowCommand, MaximizeRestoreCommand, MinimizeWindowCommand. the code that these run can be seen in the MainViewModel and MainWindow.xaml.cs
-
-
 - Improved the ComboBox; themed the ComboBoxItems
 - added more colours to be used for styling, and a "special primary colour", which is dark blue atm.
 - Improved the slider; rounded corners on the 'slider-puller-handle-thing', improved the different sizes of the progress bits on the slider, and the slider uses the "special primary colour".
@@ -26,9 +24,10 @@ and thats about it. Enjoy :)
 # How to use CustomWindowStyle (with a changable titlebar colour)
 Firstly, in a window's XAML, do:
 ```xml
-Style="{DynamicResource CustomWindowStyle}"
+Style="{DynamicResource CustomWindowStyle}" 
+WindowStyle="SingleBorderWindow"
 ```
-You can use StaticResource if you're only using one theme (DarkTheme.xaml for example). DynamicResource simply means if CustomWindowStyle changes, it will change the window style, unlike Static where it'll never change.
+You can use StaticResource if you're only using one theme (DarkTheme.xaml for example). DynamicResource simply means if CustomWindowStyle changes, it will change the window style, unlike Static where it'll never change. And setting WindowStyle to SingleBorderWindow removes the titlebar allowing ours to be used instead
 ## Setting up the Minimise/Restore/Close buttons, and their icons
 You need to bind the window you're applying the style to, to a class (e.g. WindowViewModel). Inside that class needs to be 3 commands:
 ```cs

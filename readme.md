@@ -23,6 +23,31 @@ and thats about it. Enjoy :)
 - Also improved the ScrollBars (the scroll handle bit was darker than the backgroundy bit, so i changed that.
 - Added some colours to the light theme too (not sure why you'd want to use it but eh)
 - And finally improved the RadioBoxes by giving them a more circular shape, like they normally have.
+# How to use CustomWindowStyle (with a changable titlebar colour)
+You need to bind the window you're applying the style to, to a class (e.g. WindowViewModel). Inside that class needs to be 3 commands:
+```cs
+public ICommand MinimizeWindowCommand { get; set; }
+public ICommand MaximizeRestoreCommand { get; set; }
+public ICommand CloseWindowCommand { get; set; } 
+```
+These commands need to execute the following code:
+```cs
+public void CloseWindow() => Application.Current.MainWindow.Close();
+public void MaximizeRestore()
+{
+    Window mainWindow = Application.Current.MainWindow;
+    if (mainWindow.WindowState == WindowState.Maximized)
+        mainWindowWindowState = WindowState.Normal;
+    else if (mainWindow.WindowState == WindowState.Normal)
+        mainWindow.WindowState = WindowState.Maximized;
+}
+public void Minimize() => Application.Current.MainWindow.WindowState = WindowState.Minimized;
+```
+You can make the commands executing using a class in this app called Command, which sort of converts ICommands to methods. just do:
+```cs
+CloseWindowCommand = new Command(CloseWindow); //no ()'s because... c# reasons ;)
+```
+I dont know how to simply make this "auto-do" the closing, minimizing, etc, from within the styles class so for now you need these 3 commands and methods.
 # How to use MenuItems properly (sort of)
 MenuItems are relatively challenging to auto-style, so they require just a tiny bit of effort to give them the dark theme. MenuItems use a POPUP thingy which is quite difficult to get to work sometimes. But i think i did okay tbh. but i haven't managed to put the little arrow which shows when the MenuItem has children MenuItems.
 this is the code for making a fully themed menu:
